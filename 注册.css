@@ -1,0 +1,20 @@
+﻿h1 {
+    font-size:40px;
+    font-family: 华文楷体;
+    text-align: center;
+    color:#000000;
+}
+
+p {
+    font-size:20px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+body {
+    background: url("picture_blueBackgroundOne.jpg"), url("picture_middleBackground.jpg"), url("picture_blueBackgroundTwo.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 200px, 100% 200px, 100% 300px;
+    background-position: 0 0, 0 200px, 0 400px;
+}

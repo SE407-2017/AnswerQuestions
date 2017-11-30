@@ -1,0 +1,52 @@
+﻿h1 {
+    font-size:40px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color:#000000;
+}
+
+p {
+    font-size:20px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+body {
+	background-image: url("picture_firstBackground.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+}
+	
+div.background {
+	background: url("picture_background.jpg");
+	width: 400px;
+	height: 266px;
+	margin:15px;
+	border: 0px solid;
+	position:absolute;
+	left:425px;
+	top:150px;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+div.transbox {
+	width: 338px;
+	height: 204px;
+	margin:30px;
+	padding:0;
+	background-color: #ffffff;
+	border: 0px solid;
+	filter:alpha(opacity=60);
+	opacity:0.6;
+}
+
+div.transbox form {
+	margin: 30px 40px;
+	color: #000000;
+	font:bold 12px Verdana, Geneva, sans-serif;
+	line-height:1.5;
+}

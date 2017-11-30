@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="注册.css">
+</head>
+<body>
+    <div style="position:absolute; left:33%; top:25%;" >
+        <form method="post" action="zhuce.php">
+            您的身份是：
+            <input type="radio" name="user_shenfen" value="student">学生
+            <input type="radio" name="user_shenfen" value="assistant">助教
+            <input type="radio" name="user_shenfen" value="teacher">老师
+            <br><br>
+            <input type="text" placeholder="用户名" maxlength="12" name="user_id""><!--输入用户名，最长12位-->
+            <br><br>
+            <input type="password" placeholder="密码" maxlength="12" name="user_password_input"><!--输入密码，最长12位-->
+            <br><br>
+            <input type="password" placeholder="确认密码" maxlength="12" name="user_password_confirm"><!--确认密码，最长12位-->
+            <br><br>
+            <input type="text" placeholder="姓名" maxlength="12" name="user_name"><!--输入姓名-->
+            <br><br>
+            <input type="text" placeholder="学号" maxlength="12" name="user_num"><!--输入学号，最长12位-->
+            <br><br>
+            <input type="submit" value="注册"><!--注册按钮-->
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>

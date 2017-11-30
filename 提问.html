@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要提问</title>
+    <link rel="stylesheet" type="text/css" href="提问.css"><!--外部样式-->
+	<script>
+        function over(obj) {
+            obj.style.cssText="animation:toRotateOne 1s forwards";
+        }
+
+        function out(obj) {
+            obj.style.cssText="animation:toRotateTwo 1s forwards";
+        }
+    </script>
+</head>
+<body>
+    <h1>课业难题交流</h1>
+    
+	<div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
+	<div id="textOne">
+		<p>退出登录</p>
+	</div>
+
+	<div id="second" onclick=window.open("个人中心.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
+	<div id="textTwo">
+		<p>个人中心</p>
+	</div>
+	
+	<div class="background" style="position:absolute; top:20%; left:33%">
+		<div class="transbox">
+			<br>
+		<form action="tiwen.php" method="post"  enctype="multipart/form-data">
+			所选课程：
+			<input type="text" placeholder="在这里选择题目所属的课程" list="datalist" name="course">
+			<datalist id="datalist">
+				<option>高等数学A</option>
+				<option>高等数学B</option>
+				<option>高等数学C</option>
+				<option>高等数学D</option>
+				<option>线性代数B</option>
+				<option>离散数学</option>
+				<option>程序设计与思想方法</option>
+				<option>C++程序设计</option>
+			</datalist>
+			<br>
+			<br>
+			<textarea rows="10" cols="35" placeholder="在这里输入你要提问的内容（不多于500字）" maxlength="500" name="content"></textarea>
+			<br>
+		<label for="file"></label>
+   	 	<input type="file" name="file" id="file"><br>
+		<input type="submit" name="submit" value="发表">
+		</form>
+		</div>
+	</div>
+</body>
+</html>

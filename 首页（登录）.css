@@ -1,0 +1,72 @@
+﻿h1 {
+    font-size:40px;
+    font-family: 华文楷体;
+    text-align: center;
+    color:#000000;
+}
+
+p {
+    font-size:20px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+body {
+    background: url("picture_blueBackgroundOne.jpg"), url("picture_middleBackground.jpg"), url("picture_blueBackgroundTwo.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 200px, 100% 200px, 100% 300px;
+    background-position: 0 0, 0 200px, 0 400px;
+}
+
+@keyframes toRotateOne
+{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-20deg)}
+}
+
+@keyframes toRotateTwo
+{
+    from {transform: rotate(-20deg)}
+    to {transform: rotate(0deg)}
+}
+
+#first {
+    width: 120px;
+    height: 120px;
+    background: url("picture_id.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:100px;
+    top:450px;
+}
+
+#second {
+    width: 120px;
+    height: 120px;
+    background: url("picture_ask.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:300px;
+    top:450px;
+}
+
+#textOne {
+    position: absolute;
+    left: 120px;
+    top:560px;
+}
+
+#textTwo {
+    position: absolute;
+    left: 320px;
+    top:560px;
+}

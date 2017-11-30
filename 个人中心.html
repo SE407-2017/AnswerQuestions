@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心（测试版）</title>
+    <link rel="stylesheet" type="text/css" href="个人中心&个人信息.css"><!--外部样式-->
+    <style type="text/css">
+        #itemOne {
+            width: 90px;
+            height: 60px;
+            background-color: lightskyblue;
+            border:0 solid;
+            position: absolute;
+            left:100px;
+            top:100px;
+        }
+
+        #itemTwo {
+            width: 150px;
+            height: 60px;
+            background-color: lightskyblue;
+            border:0 solid;
+            position: absolute;
+            left:200px;
+            top:100px;
+        }
+
+        #itemThree {
+            width: 150px;
+            height: 60px;
+            background-color: lightskyblue;
+            border: 0 solid;
+            position: absolute;
+            left: 360px;
+            top: 100px;
+        }
+    </style>
+
+    <script>
+        function over(obj) {
+            obj.style.cssText="animation:toRotateOne 1s forwards";
+        }
+
+        function out(obj) {
+            obj.style.cssText="animation:toRotateTwo 1s forwards";
+        }
+    </script>
+</head>
+<body>
+    <h1>课业难题交流</h1>
+
+    <div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="textOne">
+        <p>退出登录</p>
+    </div>
+
+    <div id="second" onclick=window.open("提问.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="textTwo">
+        <p>我要提问</p>
+    </div>
+
+    <div id="itemOne" onclick=window.open("user_information.php")>
+        <p>个人信息</p>
+    </div>
+
+    <div id="itemTwo" onclick=window.open("myquestion.php")>
+        <p>我提出过的问题</p>
+    </div>
+
+    <div id="itemThree" onclick=window.open("myreply.php")>
+        <p>我回答过的问题</p>
+    </div>
+</body>
+</html>
+</body>
+</html>

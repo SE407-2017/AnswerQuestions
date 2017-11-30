@@ -1,0 +1,145 @@
+﻿h1 {
+    font-size:40px;
+    font-family: 华文楷体;
+    text-align: center;
+    color:#000000;
+}
+
+a {
+    font-size:20px;
+    font-family: 微软雅黑;
+    color:#105cb6;
+}
+
+p {
+    font-size:20px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+option{
+    font-size:15px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+td{
+    width: 200px;
+    font-size:15px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+}
+
+tr{
+    text-align: center;
+}
+
+table{
+    margin-left: 30px;
+    float: left;
+    margin-top: 50px;
+    border: 2px;
+}
+
+body {
+    background: url("picture_blueBackgroundOne.jpg"), url("picture_middleBackground.jpg"), url("picture_blueBackgroundTwo.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 200px, 100% 200px, 100% 300px;
+    background-position: 0 0, 0 200px, 0 400px;
+    background-attackment:fixed;
+}
+
+@keyframes toRotateOne
+{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-20deg)}
+}
+
+@keyframes toRotateTwo
+{
+    from {transform: rotate(-20deg)}
+    to {transform: rotate(0deg)}
+}
+
+#first {
+    width: 120px;
+    height: 120px;
+    background: url("picture_checkOut.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:100px;
+    top:450px;
+}
+
+#second {
+     width: 120px;
+     height: 120px;
+     background: url("picture_ask.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 120px 120px;
+     border:0 solid;
+     border-radius:60px;
+     position: absolute;
+     left:300px;
+     top:450px;
+ }
+
+#three {
+    width: 120px;
+    height: 120px;
+    background: url("picture_id.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:500px;
+    top:450px;
+}
+
+#four {
+    width: 120px;
+    height: 120px;
+    background: url("picture_search.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:700px;
+    top:450px;
+}
+
+#textOne {
+    position: absolute;
+    left: 120px;
+    top:560px;
+}
+
+#textTwo {
+    position: absolute;
+    left: 320px;
+    top:560px;
+}
+
+#textThree {
+    position: absolute;
+    left: 520px;
+    top:560px;
+}
+
+#textFour {
+    position: absolute;
+    left: 720px;
+    top:560px;
+}

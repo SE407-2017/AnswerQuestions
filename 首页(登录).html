@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="首页（登录）.css"><!--外部样式-->
+    <script>
+        function over(obj) {
+            obj.style.cssText="animation:toRotateOne 1s forwards";
+        }
+
+        function out(obj) {
+            obj.style.cssText="animation:toRotateTwo 1s forwards";
+        }
+    </script>
+</head>
+<body>
+    <h1>课业难题交流</h1>
+
+    <div id="first" onclick=window.open("个人中心.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="textOne">
+        <p>个人中心</p>
+    </div>
+
+    <div id="second" onclick=window.open("提问.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="textTwo">
+        <p>我要提问</p>
+    </div>
+
+    <div >
+        <div style="float: left">
+		<form action="sousuo.php" method="post">
+            <input type="text" placeholder="在这里搜索课程或问题" name="course">
+            <select name="select_type">
+                <option value="0" >课程</option>
+                <option value="1" >问题</option>
+            </select>
+            <input type="submit" value="搜索">
+		</form>
+        </div>
+    </div>
+</body>
+</html>
