@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求这个函数的导数</title>
+    <link rel="stylesheet" type="text/css" href="样式2.css"><!--外部样式-->
+</head>
+
+<body>
+<h1>求这个函数的导数</h1>
+<a href="个人中心.html">个人中心</a>
+<a href="提问.html">我要提问/</a>
+<a href="搜索.html">我要搜索/</a>
+<a href="首页.html">退出登录/</a>
+<br/>
+<br/>
+<center>
+    <input type="text" id="searchvalue"  />
+    <input type="button" onclick="javascript:search()"value="搜索"/>
+    <br><br><br>
+    <div  cols="100" rows="10" id="textvalue" >
+        <form>
+            <input type="text" value="                                                              提问人: sjtuer001       日期：2017年10月24日 08:00" size="100">
+            <br>
+            <textarea rows="10" cols="101" readonly>
+                求函数 x^2+y^3+3xy+5y=0 对在x=0时的导数。
+            </textarea>
+            <br>
+
+            <br>
+            <input type="text" value="                                                              回复人: somezz          日期：2017年10月24日 09:25" size="100">
+            <br>
+            <textarea rows="10" cols="101"readonly>
+                 好难哦，占坑等大神。
+            </textarea>
+            <br>
+            <br>
+            <input type="text" value="                                                              回复人: nullMensch      日期：2017年10月24日 09:52" size="100">
+            <br>
+            <textarea rows="10" cols="101"readonly>
+                 还没学到……
+            </textarea>
+            <br>
+            <br>
+            <input type="text" value="                                                              回复人: halloWeld        日期：2017年10月24日 12:31" size="100">
+            <br>
+            <textarea rows="10" cols="101"readonly>
+                 呃，化不出y=f(x)的形式来啊。
+            </textarea>
+            <br>
+            <br>
+            <input type="text" value="                                                              回复人: nani             日期：2017年10月25日 13:05" size="100">
+            <br>
+            <textarea rows="10" cols="101"readonly>
+                 直接对x求导就行了啊……
+            </textarea>
+            <br>
+            <br>
+            <input type="text" value="                                                              回复人:  madmadman       日期：2017年10月26日 18:00" size="100">
+            <br>
+            <textarea rows="10" cols="101"readonly>
+                 同直接求导就求出来了……
+            </textarea>
+            <br>
+            <br>
+            <br>
+            <p>联系我们 电话：021-54743550 邮箱：service@sjtu.edu.cn </p>
+        </form>
+
+    </div>
+
+    <script>
+
+        function search(){
+
+            var searchtext=document.getElementById("searchvalue").value;
+            var textvalue=document.getElementById("textvalue").innerHTML;
+            if(searchtext.length==0){
+                return;
+            }
+            document.getElementById("textvalue").innerHTML=textvalue.replaceAll(searchtext,"<font color='red'>"+searchtext+"</font>");
+        }
+
+        String.prototype.replaceAll = function(s1,s2){
+            return this.replace(new RegExp(s1,"gm"),s2);
+        }
+    </script>
+</center>
+
+
+</body>
+</html>
