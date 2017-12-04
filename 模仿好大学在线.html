@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心（测试版）</title>
+    <link rel="stylesheet" type="text/css" href="样式4.css"><!--外部样式-->
+    <style type="text/css">
+        @keyframes toRotateOne
+        {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(-20deg)}
+        }
+
+        @keyframes toRotateTwo
+        {
+            from {transform: rotate(-20deg)}
+            to {transform: rotate(0deg)}
+        }
+
+        #first {
+            width: 120px;
+            height: 120px;
+            background: url("蓝色登出.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120px 120px;
+            border:0 solid;
+            border-radius:60px;
+            position: absolute;
+            left:100px;
+            top:450px;
+        }
+
+        #second {
+            width: 120px;
+            height: 120px;
+            background: url("提问.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120px 120px;
+            border:0 solid;
+            border-radius:60px;
+            position: absolute;
+            left:300px;
+            top:450px;
+        }
+
+        #textOne {
+             position: absolute;
+             left: 120px;
+             top:560px;
+         }
+
+        #textTwo {
+            position: absolute;
+            left: 320px;
+            top:560px;
+        }
+
+        #itemOne {
+            width: 90px;
+            height: 60px;
+            background-color: lightskyblue;
+            border:0 solid;
+            position: absolute;
+            left:100px;
+            top:100px;
+        }
+
+        #itemTwo {
+            width: 150px;
+            height: 60px;
+            background-color: lightskyblue;
+            border:0 solid;
+            position: absolute;
+            left:200px;
+            top:100px;
+        }
+
+        #itemThree {
+            width: 150px;
+            height: 60px;
+            background-color: lightskyblue;
+            border: 0 solid;
+            position: absolute;
+            left: 360px;
+            top: 100px;
+        }
+    </style>
+
+    <script>
+        function over(obj) {
+            obj.style.cssText="animation:toRotateOne 1s forwards";
+        }
+
+        function out(obj) {
+            obj.style.cssText="animation:toRotateTwo 1s forwards";
+        }
+    </script>
+</head>
+<body>
+    <h1>课业难题交流</h1>
+
+    <div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
+    <div id="textOne">
+        <p>退出登录</p>
+    </div>
+
+    <div id="second" onclick=window.open("提问.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="textTwo">
+        <p>我要提问</p>
+    </div>
+
+    <div id="itemOne" onclick=window.open("个人信息.html")>
+        <p>个人信息</p>
+    </div>
+
+    <div id="itemTwo" onclick=window.open("我提出过的问题.html")>
+        <p>我提出过的问题</p>
+    </div>
+
+    <div id="itemThree" onclick=window.open("我回答过的问题.html")>
+        <p>我回答过的问题</p>
+    </div>
+</body>
+</html>
+</body>
+</html>
