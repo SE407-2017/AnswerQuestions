@@ -65,7 +65,13 @@ else
 {
 	$file_url="";
 }
+
+
+
 session_start();
+$_SESSION['G_problem_id']+=1;
+$problem_id=$_SESSION['G_problem_id'];//id属性，用于搜索引擎
+
 $people=$_SESSION['G_id'];
 
 
@@ -76,8 +82,8 @@ $state="未解决"; //初始化问题状态为未解决
 $time=date("Y/m/d h:i:s");
 
 //向表中插入数据
-$sql="insert into problem(course,text_content,file_url,people,reply_num,state,time)
-values('$course','$text_content','$file_url','$people','$reply_num','$state','$time')";
+$sql="insert into problem(id,course,text_content,file_url,people,reply_num,state,time)
+values('$problem_id','$course','$text_content','$file_url','$people','$reply_num','$state','$time')";
 
 mysqli_query($con, $sql);
 
