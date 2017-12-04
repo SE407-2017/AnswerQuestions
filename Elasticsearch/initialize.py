@@ -18,7 +18,8 @@ index_mappings = {
                     "analyzer": "ik_max_word",
                     "search_analyzer": "ik_max_word"
                     }, 
-                "timestamp": {"type": "text"}
+                "reply_num": {"type": "integer"},
+                "response_state": {"type": "text"}
                 }
             }
         }

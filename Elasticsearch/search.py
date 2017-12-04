@@ -1,6 +1,5 @@
 # -- coding: utf-8 --
 #查询模块，针对中文进行了优化配置
-from datetime import datetime
 from elasticsearch import Elasticsearch
 import sys
 

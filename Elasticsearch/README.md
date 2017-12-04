@@ -6,9 +6,9 @@
 ### 运行及接口
 	·启动Elasticsearch：运行 $/elasticsearch-6.0.0/bin/elasticsearch.bat,无需配置参数;
 	·初始化索引：运行initialize.py;
-	·生成问题：调用create_question.py,需要两个参数：问题内容和程序生成的标识序列;
-	·修改问题：调用change_question.py,需要两个参数：新问题内容和原问题的标识序列;
-	·添加回答：调用create_answer.py,需要两个参数：回答内容和原问题的标识序列;
+	·生成问题：调用create_question.py,需要两个参数：程序生成的标识序列和问题内容;
+	·修改问题：调用change_question.py,需要两个参数：原问题的标识序列和新问题内容;
+	·添加回答：调用create_answer.py,需要三个参数：原问题的标识序列、回答内容和改变后的回答状态;
 	·搜索问题：调用search.py,需要一个参数：搜索的关键字;返回查询到的json格式文档,格式实例如下：
 	{
 		u'hits': {
@@ -16,8 +16,9 @@
 				u'_type': u'question', 
 				u'_source': {
 					u'content': u'\u5728\u5982\u56fe\u6240\u793a\u56fe\u5f62\u4e2d,f(x)', 
-					u'timestamp': u'2017-12-04T17:13:50.909000', 
-					u'response': [u'Elasticsearch \u592a\u5e05\u5566', u'\u8fd8\u6709']
+					u'response': [u'Elasticsearch \u592a\u5e05\u5566', u'\u8fd8\u6709'],
+					u'reply_num': u'1',
+					u'response_state': u'已解决'
 				}, 
 				u'_score': 0.5753642, 
 				u'_index': u'question_index', 
