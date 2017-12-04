@@ -1,9 +1,9 @@
-#简介
+# 简介
 	基于Elasticsearch搜索引擎的搜索模块
-#运行环境
+## 运行环境
 	·Elasticsearch：Windows系统下; Java JDK 8及以上;
 	·Python：Python 2.7; 并装载有elasticsearch-py api;
-#运行及接口
+### 运行及接口
 	·启动Elasticsearch：运行 $/elasticsearch-6.0.0/bin/elasticsearch.bat,无需配置参数;
 	·初始化索引：运行initialize.py;
 	·生成问题：调用create_question.py,需要两个参数：问题内容和程序生成的标识序列;
