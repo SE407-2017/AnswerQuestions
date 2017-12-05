@@ -65,7 +65,27 @@
 			}
 			else
 			{
-				echo "<script language=javascript>alert('待进一步实现');history.go(-1);</script>";
+				$course=$_POST["course"];
+				$result=mysqli_query($con, "select * from problem");
+				$number=mysqli_num_rows($result);
+			for ($x=1;$x<=$number;$x++)
+			{
+				$row=mysqli_fetch_array($result);
+				$text=$row["text_content"];
+				$is_exist=is_int(strpos($text,$course));//搜索问题字符串匹配
+	
+				if($is_exist)
+				{
+				echo "<tr>"."<td>";
+				
+				echo "<a style='margin-left: 30px' target='_blank' href='answer_question.php?content=$text'>".$text."</a>"."</td>";
+				echo "<td>".$row['people']."</td>";
+				echo "<td>".$row['reply_num']."</td>";
+				echo "<td>".$row['state']."</td>";
+				echo "<td>".$row['time']."</td>";
+				echo "</tr>";	
+				}
+			}
 			}
 			mysqli_close($con); 
 		?>
