@@ -1,8 +1,9 @@
 ﻿h1 {
     font-size:40px;
-    font-family: 微软雅黑;
+    font-family: myFirstFont;
     text-align: center;
     color:#000000;
+	font-weight:900;
 }
 
 p {
@@ -18,6 +19,7 @@ body {
 	background-repeat:no-repeat;
 	background-position: center;
 	background-attachment:fixed;
+	text-align:center;
 }
 	
 div.background {
@@ -82,4 +84,10 @@ input.upLoad:hover{
 	border-radius:3px;
 	filter:alpha(opacity=80);
 	opacity:0.8;
+}
+
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('方正瘦金书简体.ttf');
 }

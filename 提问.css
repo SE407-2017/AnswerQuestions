@@ -1,8 +1,9 @@
 ﻿h1 {
     font-size:40px;
-    font-family: 华文楷体;
+    font-family: myFirstFont;
     text-align: center;
     color:#000000;
+	font-weight:900;
 }
 
 p {
@@ -105,4 +106,10 @@ div.transbox form {
 	color: #000000;
 	font:bold 12px 微软雅黑;
 	line-height:1.5;
+}
+
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('方正瘦金书简体.ttf');
 }

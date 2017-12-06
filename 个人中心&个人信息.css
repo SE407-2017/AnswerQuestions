@@ -1,13 +1,21 @@
 ﻿h1 {
     font-size:40px;
-    font-family: 华文楷体;
+    font-family: myFirstFont;
     text-align: center;
     color:#000000;
+	font-weight:900;
 }
 
 p {
     font-size:20px;
-    font-family: 微软雅黑;
+    font-family: 宋体;
+    text-align: center;
+    color: #000000;
+}
+
+p1 {
+    font-size:15px;
+    font-family: 宋体;
     text-align: center;
     color: #000000;
 }
@@ -77,4 +85,10 @@ body {
     position: absolute;
     left: 320px;
     top:560px;
+}
+
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('方正瘦金书简体.ttf');
 }
