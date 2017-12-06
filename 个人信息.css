@@ -1,14 +1,8 @@
-﻿h1 {
+h1 {
     font-size:40px;
     font-family: 华文楷体;
     text-align: center;
     color:#000000;
-}
-
-a {
-    font-size:20px;
-    font-family: 微软雅黑;
-    color:#105cb6;
 }
 
 p {
@@ -23,25 +17,6 @@ option{
     font-family: 微软雅黑;
     text-align: center;
     color: #000000;
-}
-
-td{
-    width: 200px;
-    font-size:15px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-tr{
-    text-align: center;
-}
-
-table{
-    margin-left: 30px;
-    float: left;
-    margin-top: 50px;
-    border: 2px;
 }
 
 body {
@@ -71,52 +46,25 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
+    border: 0 solid;
+    border-radius: 60px;
     position: absolute;
-    left:100px;
-    top:450px;
+    left: 100px;
+    top: 450px;
 }
+
 
 #second {
-     width: 120px;
-     height: 120px;
-     background: url("picture_ask.png");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 120px 120px;
-     border:0 solid;
-     border-radius:60px;
-     position: absolute;
-     left:300px;
-     top:450px;
- }
-
-#three {
     width: 120px;
     height: 120px;
-    background: url("picture_id.jpg");
+    background: url("picture_ask.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120px 120px;
     border:0 solid;
     border-radius:60px;
     position: absolute;
-    left:500px;
-    top:450px;
-}
-
-#four {
-    width: 120px;
-    height: 120px;
-    background: url("picture_search.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
-    position: absolute;
-    left:700px;
+    left:300px;
     top:450px;
 }
 
@@ -132,14 +80,32 @@ body {
     top:560px;
 }
 
-#textThree {
+#itemOne {
+    width: 150px;
+    height: 50px;
+    border:1px solid;
     position: absolute;
-    left: 520px;
-    top:560px;
+    left:100px;
+    top:100px;
+    border-radius:3px;
 }
 
-#textFour {
+#itemTwo {
+    width: 150px;
+    height: 50px;
+    border:1px solid;
     position: absolute;
-    left: 720px;
-    top:560px;
+    left:270px;
+    top:100px;
+    border-radius:3px;
+}
+
+#itemThree {
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    position: absolute;
+    left: 430px;
+    top: 100px;
+    border-radius:3px;
 }

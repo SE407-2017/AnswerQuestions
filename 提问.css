@@ -1,9 +1,8 @@
 ﻿h1 {
     font-size:40px;
-    font-family: myFirstFont;
+    font-family: 华文楷体;
     text-align: center;
     color:#000000;
-	font-weight:900;
 }
 
 p {
@@ -14,15 +13,16 @@ p {
 }
 
 form {
-	font-family: 微软雅黑；
+	font-family: 微软雅黑;
 	font-weight:bold;
 }
 
 body {
-    background: url("picture_blueBackgroundOne.jpg"), url("picture_middleBackground.jpg"), url("picture_blueBackgroundTwo.jpg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 100% 200px, 100% 200px, 100% 300px;
-    background-position: 0 0, 0 200px, 0 400px;
+    background: url("picture_blueBackgroundOne.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-attachment: fixed;
 }
 
 @keyframes toRotateOne
@@ -85,31 +85,68 @@ div.background {
 	border: 0px solid;
 	position:absolute;
 	left:425px;
-	top:150px
+	top:150px;
 	filter:alpha(opacity=95);
 	opacity:0.95;
+    border-radius:3px;
 }
 
 div.transbox {
 	width: 400px;
-	height: 300px;
+	height: 320px;
 	margin:30px;
 	padding:0;
 	background-color: #ffffff;
 	border: 0px solid;
 	filter:alpha(opacity=70);
 	opacity:0.7;
+    border-radius:3px;
 }
 
 div.transbox form {
-	margin: 30px 40px;
+	margin: 20px 40px;
 	color: #000000;
 	font:bold 12px 微软雅黑;
 	line-height:1.5;
 }
 
-@font-face
-{
-    font-family: myFirstFont;
-    src: url('方正瘦金书简体.ttf');
+input.upLoad {
+    width:120px;
+    height:30px;
+    border:none;
+    background:url(picture_login.jpg);
+    font-size:20px;
+    font-family: Arial;
+    text-align: center;
+    color:#000000;
+    border-radius:3px;
+}
+
+input.upLoad:hover{
+    width:120px;
+    height:30px;
+    border:none;
+    background:url(picture_login.jpg);
+    font-size:20px;
+    font-family: Arial;
+    text-align: center;
+    color:#000000;
+    border-radius:3px;
+    filter:alpha(opacity=80);
+    opacity:0.8;
+}
+
+input.search {
+    width:200px;
+    height:20px;
+    border:solid 1px;
+    font-size:15px;
+    font-family: Arial;
+    color:#000000;
+    border-radius:3px;
+}
+
+textarea {
+    border:solid 1px;
+    border-radius:3px;
 }

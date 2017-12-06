@@ -26,15 +26,17 @@
 	<div id="textTwo">
 		<p>注册</p>
 	</div>
-	<div>
-		<div style="float: left">
-            <input type="text" placeholder="在这里搜索课程或问题" name="course">
-            <select name="select_type">
-                <option value="0" >课程</option>
-                <option value="1" >问题</option>
-            </select>
-			<button>搜索</button>
-		</div>
-	</div>
+
+	<center>
+		<form action="sousuo.php" method="post">
+			<input type="text" placeholder="在这里搜索课程或问题" name="course" class="search">
+			<select name="select_type" class="selection">
+				<option value="0" >课程</option>
+				<option value="1" >问题</option>
+			</select>
+			<br><br>
+			<input type="submit" value="搜索" class="upLoad">
+		</form>
+	</center>
 </body>
 </html>

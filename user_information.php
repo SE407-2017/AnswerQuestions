@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>个人信息</title>
-    <link rel="stylesheet" type="text/css" href="个人中心.css"><!--外部样式-->
+    <link rel="stylesheet" type="text/css" href="个人信息.css"><!--外部样式-->
     <script>
         function over(obj) {
             obj.style.cssText="animation:toRotateOne 1s forwards";
@@ -26,31 +26,28 @@
         <p>我要提问</p>
     </div>
 
-    <table>
-        <tr>
-            <td>用户名：</td>
-			<td>
+    <div id="itemOne">
+        <p>用户名:</p>
 			<?php
 				session_start();
 				echo $_SESSION['G_id'];//显示用户名
 			?>
-			</td>
-        </tr>
-        <tr>
-            <td>姓名：</td>
-			<td>
+	</div>
+	<br>
+
+    <div id="itemTwo">
+        <p>姓名：</p>
 			<?php
 				echo $_SESSION['G_name'];//显示姓名
 			?>
-        </tr>
-        <tr>
-            <td>学号：</td>
-			<td>
+    </div>
+    <br>
+
+    <div id="itemThree">
+        <p>学号：</p>
 			<?php
 				echo $_SESSION['G_num'];//显示学号
 			?>
-			</td>
-        </tr>
-    </table>
+	</div>
 </body>
 </html>
