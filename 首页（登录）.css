@@ -12,6 +12,10 @@ p {
     color: #000000;
 }
 
+input {
+    border-radius:3px;
+}
+
 body {
     background: url("picture_blueBackgroundOne.jpg"), url("picture_middleBackground.jpg"), url("picture_blueBackgroundTwo.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;

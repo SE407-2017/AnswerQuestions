@@ -18,3 +18,33 @@ body {
     background-size: 100% 200px, 100% 200px, 100% 300px;
     background-position: 0 0, 0 200px, 0 400px;
 }
+
+input {
+    border-radius:3px;
+}
+
+input.upLoad {
+    width:120px;
+    height:30px;
+    border:none;
+    background:url(picture_login.jpg);
+    font-size:20px;
+    font-family: Arial;
+    text-align: center;
+    color:#000000;
+    border-radius:3px;
+}
+
+input.upLoad:hover{
+    width:120px;
+    height:30px;
+    border:none;
+    background:url(picture_login.jpg);
+    font-size:20px;
+    font-family: Arial;
+    text-align: center;
+    color:#000000;
+    border-radius:3px;
+    filter:alpha(opacity=80);
+    opacity:0.8;
+}
