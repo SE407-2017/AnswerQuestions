@@ -1,8 +1,9 @@
 ﻿h1 {
     font-size:40px;
-    font-family: 华文楷体;
+    font-family: myFirstFont;
     text-align: center;
     color:#000000;
+	font-weight:900;
 }
 
 p {
@@ -149,4 +150,10 @@ input.search {
 textarea {
     border:solid 1px;
     border-radius:3px;
+}
+
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('方正瘦金书简体.ttf');
 }
