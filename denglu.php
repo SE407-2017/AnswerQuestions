@@ -29,7 +29,7 @@ else
 	$_SESSION['G_id']=$id;//设为全局，便于在其他界面操作显示
 	$_SESSION['G_name']=$row["user_name"];
 	$_SESSION['G_num']=$row["user_num"];
-	header("location:首页(登录).html");
+	header("location:shouye(denglu).php");
 }
 	
 

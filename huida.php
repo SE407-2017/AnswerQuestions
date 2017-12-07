@@ -85,6 +85,6 @@ values('$problem_text_content','$reply_text_content','$file_url','$people','$tim
 
 mysqli_query($con, $sql);
 
-header("location:首页(登录).html");
+header("location:shouye(denglu).php");
 mysqli_close($con);
 ?>

@@ -81,12 +81,13 @@ $state="未解决"; //初始化问题状态为未解决
 
 $time=date("Y/m/d h:i:s");
 
+$pn=0;
 //向表中插入数据
-$sql="insert into problem(id,course,text_content,file_url,people,reply_num,state,time)
-values('$problem_id','$course','$text_content','$file_url','$people','$reply_num','$state','$time')";
+$sql="insert into problem(id,course,text_content,file_url,people,reply_num,state,time,praise_num)
+values('$problem_id','$course','$text_content','$file_url','$people','$reply_num','$state','$time','$pn')";
 
 mysqli_query($con, $sql);
 
-header("location:首页(登录).html");
+header("location:shouye(denglu).php");
 mysqli_close($con);
 ?>

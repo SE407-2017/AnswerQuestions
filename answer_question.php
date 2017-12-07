@@ -52,6 +52,9 @@
 				}
 			?>
 			<!--<img src="<?php echo $row["file_url"];?>"  width="300px">-->
+			<br>
+			点赞数：<?php echo $row["praise_num"]."   "."<a href='dianzan.php?content=$text'>"."为他点赞"."</a>"; ?>
+			
 			
 			<br>
 			<br>

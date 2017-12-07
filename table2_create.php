@@ -11,19 +11,14 @@ if (!$con){
 }
 //mysqli_query($con,"set Names 'UTF8'");
 // 创建数据表
-$sql = "create table problem(id int,
-course varchar(12),
-text_content varchar(500),
-file_url varchar(200),
-people varchar(12),
-reply_num int,
-state varchar(3),
-time varchar(25),
-praise_num int
+$sql = "create table problem(
+course varchar(120),
+text_content varchar(120),
+people_id varchar(12),
+reply_num varchar(12),
+state varchar(12),
+time varchar(12)
 )";
-
-session_start();
-$_SESSION['G_problem_id']=0;
 
 if (mysqli_query($con, $sql)) {
 	echo "数据表创建成功";
