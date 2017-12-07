@@ -5,15 +5,14 @@ h1 {
     color:#000000;
 }
 
-p {
+a {
     font-size:20px;
     font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
+    color:#105cb6;
 }
 
-option{
-    font-size:15px;
+p {
+    font-size:20px;
     font-family: 微软雅黑;
     text-align: center;
     color: #000000;
@@ -46,14 +45,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120px 120px;
-    border: 0 solid;
-    border-radius: 60px;
+    border:0 solid;
+    border-radius:60px;
     position: absolute;
-    left: 100px;
-    top: 450px;
-    cursor:pointer;
+    left:100px;
+    top:450px;
+    cursor: pointer;
 }
-
 
 #second {
     width: 120px;
@@ -67,7 +65,37 @@ body {
     position: absolute;
     left:300px;
     top:450px;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+#three {
+    width: 120px;
+    height: 120px;
+    background: url("picture_id.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:500px;
+    top:450px;
+    cursor: pointer;
+}
+
+#four {
+    width: 120px;
+    height: 120px;
+    background: url("picture_search.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+    border:0 solid;
+    border-radius:60px;
+    position: absolute;
+    left:700px;
+    top:450px;
+    cursor: pointer;
 }
 
 #textOne {
@@ -82,32 +110,14 @@ body {
     top:560px;
 }
 
-#itemOne {
-    width: 150px;
-    height: 50px;
-    border:1px solid;
+#textThree {
     position: absolute;
-    left:100px;
-    top:100px;
-    border-radius:3px;
+    left: 520px;
+    top:560px;
 }
 
-#itemTwo {
-    width: 150px;
-    height: 50px;
-    border:1px solid;
+#textFour {
     position: absolute;
-    left:270px;
-    top:100px;
-    border-radius:3px;
-}
-
-#itemThree {
-    width: 150px;
-    height: 50px;
-    border: 1px solid;
-    position: absolute;
-    left: 430px;
-    top: 100px;
-    border-radius:3px;
+    left: 720px;
+    top:560px;
 }

@@ -55,6 +55,7 @@ body {
     position: absolute;
     left:100px;
     top:450px;
+    cursor:pointer;
 }
 
 #second {
@@ -69,6 +70,7 @@ body {
     position: absolute;
     left:300px;
     top:450px;
+    cursor:pointer;
 }
 
 #textOne {
@@ -107,13 +109,13 @@ input.upLoad:hover {
     border-radius: 3px;
     filter: alpha(opacity=80);
     opacity: 0.8;
+    cursor:pointer;
 }
 
 input.search {
     width:300px;
     height:20px;
     border:none;
-    background-color: lightskyblue;
     font-size:15px;
     font-family: Arial;
     color:#000000;
@@ -124,9 +126,16 @@ select.selection {
     width:70px;
     height:20px;
     border:none;
-    background-color: lightskyblue;
     font-size:15px;
     font-family: Arial;
     color:#000000;
+    border-radius:3px;
+}
+
+form {
+    width:400px;
+    height:100px;
+    border:none;
+    background: url("picture_background.jpg");
     border-radius:3px;
 }

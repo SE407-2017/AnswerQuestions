@@ -39,11 +39,12 @@
 
     <table style="margin-left: 30px;float: left" >
         <tr style="text-align: left">
-            <th width="400px" style="float: left;margin-left: 20px">问题内容</th>
-            <th width="400px">回复内容</th>
-            <th width="100px">回答人</th>
-            <th width="100px">回答时间</th>
+            <th width="400px" style="float: left;margin-left: 20px; border:1px solid; border-radius:3px; text-align:center;" >问题内容:</th>
+            <th width="400px" style="border:1px solid; border-radius:3px; text-align:center;">回复内容:</th>
+            <th width="100px" style="border:1px solid; border-radius:3px; text-align:center;">回答人:</th>
+            <th width="100px" style="border:1px solid; border-radius:3px; text-align:center;">回答时间:</th>
         </tr>
+
 		<?php
 			$con=mysqli_connect("localhost","root","","users");
 			if (!$con){
@@ -67,7 +68,6 @@
 			}
 			mysqli_close($con); 
 		?>
-       
     </table>
 </body>
 </html>

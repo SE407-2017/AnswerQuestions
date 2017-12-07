@@ -44,6 +44,7 @@ input.upLoad:hover{
     border-radius:3px;
     filter:alpha(opacity=80);
     opacity:0.8;
+    cursor:pointer;
 }
 
 input.search {
