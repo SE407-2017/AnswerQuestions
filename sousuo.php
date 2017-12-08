@@ -15,41 +15,92 @@
     <select name="select_type" style="margin-left: 20px;width: 80px" >
         <option value="0">课程</option>
         <option value="1">问题</option>
+    </select>    
+	<select name="shaixuan" style="margin-left: 30px"><!--筛选-->
+        <option value="0">按提问时间升序</option>
+        <option value="1">按提问时间降序</option>
+        <option value="2">按回复数升序</option>
+        <option value="3">按回复数降序</option>
+        <option value="4">已解决</option>
+        <option value="5">未解决</option>
+		<option value="6">按点赞数升序</option>
+		<option value="7">按点赞数降序</option>
     </select>
 	<input type="submit" style="margin-left: 20px" value="搜索">
-</form>
-<form action="shaixuan.php" method="post">
-    <p style="margin-left: 30px;font-family: 微软雅黑" >欢迎来到<?php echo $_POST["course"]; ?>课业难题交流区：</p>
-   
-    <select name="shaixuan" style="margin-left: 30px"><!--筛选-->
-        <option>按提问时间升序</option>
-        <option>按提问时间降序</option>
-        <option>按回复数升序</option>
-        <option>按回复数降序</option>
-        <option>已解决</option>
-        <option>未解决</option>
-    </select>
-	<input type="submit" style="margin-left: 20px" value="筛选">
+
+    <p style="margin-left: 30px;font-family: 微软雅黑" ><?php 
+	if ($_POST["select_type"]=="0")
+	{
+		echo "欢迎来到".$_POST["course"]."课业难题交流区：";
+	}
+	else
+	{
+		echo "以下是".$_POST["course"]."的搜索结果:";
+	}
+	?></p>
     <table style="margin-left: 30px" >
         <tr style="text-align: left">
             <th width="600px" style="float: left;margin-left: 20px">内容</th>
             <th width="100px">提问人</th>
             <th width="100px">回复数目</th>
             <th width="100px">是否解决</th>
-            <th width="100px">提问时间</th>
+            <th width="200px">提问时间</th>
+			<th width="100px">点赞数</th>
         </tr>
 		<?php
 			$con=mysqli_connect("localhost","root","","users");
 			if (!$con){
 				die("连接失败:".mysqli_connect_error());
 			}
+			$course=$_POST["course"];
+			
+			
+			
 			
 			if ($_POST["select_type"]=="0")
 			{
-			$course=$_POST["course"];
-			$result=mysqli_query($con, "select * from problem where course='$course'");//显示当前课程的所有问题
-			$number=mysqli_num_rows($result);
-			
+
+			//筛选排序
+			if ($_POST["shaixuan"]=="0")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY time DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="1")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY time ");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="2")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY reply_num DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="3")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY reply_num ");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="4")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY state ");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="5")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY state DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="6")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY praise_num DESC");
+				$number=mysqli_num_rows($result);
+			}
+			else
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem where course='$course' ORDER BY praise_num");
+				$number=mysqli_num_rows($result);
+			}
 			for ($x=1;$x<=$number;$x++)
 			{
 				$row=mysqli_fetch_array($result);
@@ -60,14 +111,56 @@
 				echo "<td>".$row['reply_num']."</td>";
 				echo "<td>".$row['state']."</td>";
 				echo "<td>".$row['time']."</td>";
+				echo "<td>".$row['praise_num']."</td>";
 				echo "</tr>";	
 			}
 			}
+			
 			else
 			{
-				$course=$_POST["course"];
-				$result=mysqli_query($con, "select * from problem");
+				
+			
+			//筛选排序
+			if ($_POST["shaixuan"]=="0")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY time");
 				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="1")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY time DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="2")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY reply_num");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="3")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY reply_num  DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="4")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY state");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="5")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem  ORDER BY state DESC");
+				$number=mysqli_num_rows($result);
+			}
+			elseif ($_POST["shaixuan"]=="6")
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY praise_num DESC");
+				$number=mysqli_num_rows($result);
+			}
+			else
+			{
+				$result = mysqli_query($con,"SELECT * FROM problem ORDER BY praise_num");
+				$number=mysqli_num_rows($result);
+			}
 			for ($x=1;$x<=$number;$x++)
 			{
 				$row=mysqli_fetch_array($result);
@@ -83,10 +176,12 @@
 				echo "<td>".$row['reply_num']."</td>";
 				echo "<td>".$row['state']."</td>";
 				echo "<td>".$row['time']."</td>";
+				echo "<td>".$row['praise_num']."</td>";
 				echo "</tr>";	
 				}
 			}
 			}
+
 			mysqli_close($con); 
 		?>
     </table>
