@@ -1,19 +1,37 @@
-﻿div.background {
-    width: 600px;
-    height: 700px;
+﻿form {
+    width: 400px;
+    height: auto;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    border:1px solid;
+    border-radius:20px;
+    position: absolute;
+    left: 680px;
+    top: 350px;
+}
+
+div.background {
+    width: 550px;
+    height: auto;
 }
 
 div.transbox {
     width: 500px;
-    height: 700px;
+    height: auto;
 }
 
 #first {
-    background: url("picture_enroll.jpg");
+    background: url("picture_checkOut.jpg");
 }
 
 #second {
-    background: url("picture_register.jpg");
+    background: url("picture_ask.jpg");
 }
 
 #three {
@@ -22,5 +40,8 @@ div.transbox {
 
 #four {
     background: url("picture_search.jpg");
+}
 
+#five {
+    background: url("picture_first.jpg");
 }

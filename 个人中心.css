@@ -6,6 +6,10 @@
     background: url("picture_ask.jpg");
 }
 
+#three {
+    background: url("picture_first.jpg");
+}
+
 #itemOne {
     width: 90px;
     height: 50px;

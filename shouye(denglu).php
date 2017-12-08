@@ -41,7 +41,6 @@
 			</select>
             <br><br>
             <input type="submit" value="搜索" class="upLoad">
-	
 		</form>
     </center>
 
@@ -56,7 +55,7 @@
                 <th width="100px">回复数目：</th>
                 <th width="100px">是否解决：</th>
                 <th width="100px">提问时间：</th>
-                <th width="100px">点赞数：</th>
+                <th width="100px">需求人数：</th>
             </tr>
 
             <?php

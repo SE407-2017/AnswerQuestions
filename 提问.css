@@ -1,11 +1,16 @@
-﻿div.background {
+﻿form {
+    width:320px;
+    height:350px;
+}
+
+div.background {
     width: 460px;
-    height: 420px;
+    height: 450px;
 }
 
 div.transbox {
     width: 400px;
-    height: 370px;
+    height: 400px;
 }
 
 #first {
@@ -14,4 +19,8 @@ div.transbox {
 
 #second {
     background: url("picture_center.jpg");
+}
+
+#three {
+    background: url("picture_first.jpg");
 }

@@ -2,16 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <title>个人信息</title>
-    <link rel="stylesheet" type="text/css" href="个人信息.css"><!--外部样式-->
-    <script>
-        function over(obj) {
-            obj.style.cssText="animation:toRotateOne 1s forwards";
-        }
-
-        function out(obj) {
-            obj.style.cssText="animation:toRotateTwo 1s forwards";
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="个人信息.css">
+    <link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
+    <script type="text/javascript" src="动画.js"></script>
 </head>
 <body>
     <h1>课业难题交流</h1>
@@ -26,13 +19,19 @@
         <p>我要提问</p>
     </div>
 
+    <div id="three" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)" ></div>
+    <div id="textThree">
+        <p>返回首页</p>
+    </div>
+
     <div id="itemOne">
         <p>用户名:</p>
-			<?php
-				session_start();
-				echo $_SESSION['G_id'];//显示用户名
-			?>
-	</div>
+        <?php
+            session_start();
+            echo $_SESSION['G_id'];//显示用户名
+        ?>
+    </div>
+
 	<br>
 
     <div id="itemTwo">
