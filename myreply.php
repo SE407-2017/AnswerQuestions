@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>您提出的问题</title>
-    <link rel="stylesheet" type="text/css" href="回答.css"><!--外部样式-->
+    <link rel="stylesheet" type="text/css" href="我提出&回答的问题.css">
+    <link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
     <script>
         function over(obj) {
             obj.style.cssText="animation:toRotateOne 1s forwards";
