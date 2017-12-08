@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
     <link rel="stylesheet" type="text/css" href="注册.css">
+    <link rel="stylesheet" type="text/css" href="public.css">
 </head>
+
 <body>
+    <h1>课业难题交流</h1>
+
     <center>
-        <h1>课业难题交流</h1>
         <div class="background">
             <center>
                 <div class="transbox">
                     <center>
+                        <br>
+                        您的身份是：
+                        <input type="radio" name="user_shenfen" value="student" style="cursor:pointer;">学生
+                        <input type="radio" name="user_shenfen" value="assistant" style="cursor:pointer;">助教
+                        <input type="radio" name="user_shenfen" value="teacher" style="cursor:pointer;">老师
                         <form method="post" action="zhuce.php">
-                            您的身份是：
-                            <input type="radio" name="user_shenfen" value="student" style="cursor:pointer;">学生
-                            <input type="radio" name="user_shenfen" value="assistant" style="cursor:pointer;">助教
-                            <input type="radio" name="user_shenfen" value="teacher" style="cursor:pointer;">老师
-                            <br><br>
+                            <br>
                             <input type="text" placeholder="用户名" maxlength="12" name="user_id" class="search"><!--输入用户名，最长12位-->
                             <br><br>
                             <input type="password" placeholder="密码" maxlength="12" name="user_password_input" class="search"><!--输入密码，最长12位-->

@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" type="text/css" href="登录.css"><!--外部样式-->
+    <link rel="stylesheet" type="text/css" href="登录.css">
+	<link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
+	<style>
+		body {
+			background-image: url("picture_firstBackground.jpg");
+			background-size:100%;
+			background-repeat:no-repeat;
+			background-position: center;
+			background-attachment:fixed;
+			filter:alpha(opacity=95);
+			opacity:0.95;
+		}
+	</style>
 </head>
 
 <body>
     <h1 style="color: white">课业难题交流</h1>
+
     <center>
 		<div class="background">
 			<center>
@@ -15,6 +28,7 @@
 					<br>
 				<center>
 					<form method="get" action="denglu.php">
+						<br>
 						<input type="text" placeholder="用户名" maxlength="12" name="user"><!--输入用户名，最长12位-->
 						<br><br>
 						<input type="password" placeholder="密码" maxlength="12" name="password"><!--输入密码，最长12位-->

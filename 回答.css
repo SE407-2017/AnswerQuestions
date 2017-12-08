@@ -1,212 +1,26 @@
-﻿h1 {
-    font-size:40px;
-    font-family: myFirstFont;
-    text-align: center;
-    color:#000000;
-	font-weight:900;
-}
-
-a {
-    font-size:20px;
-    font-family: 微软雅黑;
-    color:#105cb6;
-}
-
-p {
-    font-size:20px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-option{
-    font-size:15px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-td{
-    width: 200px;
-    font-size:15px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-tr{
-    text-align: center;
-}
-
-table{
-    margin-left: 30px;
-    float: left;
-    margin-top: 50px;
-    border: 2px;
-}
-
-body {
-    background: url("picture_blueBackgroundOne.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 0 0;
-    background-attachment: fixed;
-}
-
-@keyframes toRotateOne
-{
-    from {transform: rotate(0deg)}
-    to {transform: rotate(-20deg)}
-}
-
-@keyframes toRotateTwo
-{
-    from {transform: rotate(-20deg)}
-    to {transform: rotate(0deg)}
-}
-
-#first {
-    width: 120px;
-    height: 120px;
-    background: url("picture_checkOut.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
-    position: absolute;
-    left:100px;
-    top:450px;
-}
-
-#second {
-     width: 120px;
-     height: 120px;
-     background: url("picture_ask.png");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 120px 120px;
-     border:0 solid;
-     border-radius:60px;
-     position: absolute;
-     left:300px;
-     top:450px;
- }
-
-#three {
-    width: 120px;
-    height: 120px;
-    background: url("picture_id.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
-    position: absolute;
-    left:500px;
-    top:450px;
-}
-
-#four {
-    width: 120px;
-    height: 120px;
-    background: url("picture_search.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
-    position: absolute;
-    left:700px;
-    top:450px;
-}
-
-#textOne {
-    position: absolute;
-    left: 120px;
-    top:560px;
-}
-
-#textTwo {
-    position: absolute;
-    left: 320px;
-    top:560px;
-}
-
-#textThree {
-    position: absolute;
-    left: 520px;
-    top:560px;
-}
-
-#textFour {
-    position: absolute;
-    left: 720px;
-    top:560px;
-}
-
-input.upLoad {
-    width:120px;
-    height:30px;
-    border:none;
-    background:url(picture_login.jpg);
-    font-size:20px;
-    font-family: Arial;
-    text-align: center;
-    color:#000000;
-    border-radius:3px;
-}
-
-input.upLoad:hover{
-    width:120px;
-    height:30px;
-    border:none;
-    background:url(picture_login.jpg);
-    font-size:20px;
-    font-family: Arial;
-    text-align: center;
-    color:#000000;
-    border-radius:3px;
-    filter:alpha(opacity=80);
-    opacity:0.8;
-}
-
-div.background {
-    background: url("picture_background.jpg");
+﻿div.background {
     width: 600px;
     height: 700px;
-    margin:15px;
-    border: 0px solid;
-    position:absolute;
-    left:425px;
-    top:150px;
-    filter:alpha(opacity=95);
-    opacity:0.95;
-    border-radius:5px;
 }
 
 div.transbox {
     width: 500px;
     height: 700px;
-    margin:30px;
-    padding:0;
-    background-color: #ffffff;
-    border: 0px solid;
-    filter:alpha(opacity=80);
-    opacity:0.8;
-    border-radius:5px;
 }
 
-div.transbox form {
-    margin: 30px 40px;
-    color: #000000;
-    font:bold 12px Verdana, Geneva, sans-serif;
-    line-height:1.5;
-    border-radius:10px;
+#first {
+    background: url("picture_enroll.jpg");
 }
 
-@font-face
-{
-    font-family: myFirstFont;
-    src: url('方正瘦金书简体.ttf');
+#second {
+    background: url("picture_register.jpg");
+}
+
+#three {
+    background: url("picture_center.jpg");
+}
+
+#four {
+    background: url("picture_search.jpg");
+
 }

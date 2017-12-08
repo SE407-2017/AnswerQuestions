@@ -1,85 +1,9 @@
-h1 {
-    font-size:40px;
-    font-family: myFirstFont;
-    text-align: center;
-    color:#000000;
-	font-weight:900;
-}
-p {
-    font-size:20px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-option{
-    font-size:15px;
-    font-family: 微软雅黑;
-    text-align: center;
-    color: #000000;
-}
-
-body {
-    background: url("picture_blueBackgroundOne.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 0 0;
-    background-attachment: fixed;
-}
-
-@keyframes toRotateOne
-{
-    from {transform: rotate(0deg)}
-    to {transform: rotate(-20deg)}
-}
-
-@keyframes toRotateTwo
-{
-    from {transform: rotate(-20deg)}
-    to {transform: rotate(0deg)}
-}
-
 #first {
-    width: 120px;
-    height: 120px;
     background: url("picture_checkOut.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border: 0 solid;
-    border-radius: 60px;
-    position: absolute;
-    left: 100px;
-    top: 450px;
-    cursor:pointer;
 }
-
 
 #second {
-    width: 120px;
-    height: 120px;
-    background: url("picture_ask.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px 120px;
-    border:0 solid;
-    border-radius:60px;
-    position: absolute;
-    left:300px;
-    top:450px;
-    cursor:pointer;
-}
-
-#textOne {
-    position: absolute;
-    left: 120px;
-    top:560px;
-}
-
-#textTwo {
-    position: absolute;
-    left: 320px;
-    top:560px;
+    background: url("picture_ask.jpg");
 }
 
 #itemOne {
@@ -110,10 +34,4 @@ body {
     left: 430px;
     top: 100px;
     border-radius:3px;
-}
-
-@font-face
-{
-    font-family: myFirstFont;
-    src: url('方正瘦金书简体.ttf');
 }
