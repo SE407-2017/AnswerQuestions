@@ -16,7 +16,8 @@ problem_text_content varchar(500),
 reply_text_content varchar(500),
 file_url varchar(200),
 people varchar(12),
-time varchar(25)
+time varchar(25),
+praise_num int
 )";
 
 if (mysqli_query($con, $sql)) {

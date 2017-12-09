@@ -78,9 +78,11 @@ mysqli_query($con,"update problem set reply_num=$new_reply_num where text_conten
 
 $time=date("Y/m/d h:i:s");
 
+$pn=0;
+
 //向表中插入数据
-$sql="insert into reply(problem_text_content,reply_text_content,file_url,people,time)
-values('$problem_text_content','$reply_text_content','$file_url','$people','$time')";
+$sql="insert into reply(problem_text_content,reply_text_content,file_url,people,time,praise_num)
+values('$problem_text_content','$reply_text_content','$file_url','$people','$time','$pn')";
 
 
 mysqli_query($con, $sql);

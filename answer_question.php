@@ -72,7 +72,7 @@
                             echo "<img src=$url width='300px'>";
                             }
                         ?>
-                        <!--<img src="<?php echo $row["file_url"];?>"  width="300px">-->
+
                         <p style="color:white;">我也有同样的疑问:</p>
                         <?php echo $row["praise_num"]."   "."<a href='dianzan.php?content=$text'>"."+1"."</a>"; ?>
                         <img src="picture_question.jpg">
@@ -99,7 +99,7 @@
                                 {
                                     echo "<img src=$r_url width='300px'>";
                                 }
-                                echo "<br>"."<br>"."<br>";
+                                echo "<br>"."<p style'color:white;'>"."回答很赞:"."</p>".$rowx["praise_num"]."   "."<a href='dianzan2.php?content=$text'>"."+1"."</a>"."<br>"."<br>";
                             }
                             mysqli_close($con);
                             ?>
