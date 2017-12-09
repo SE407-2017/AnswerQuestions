@@ -18,11 +18,11 @@ select.selection {
     font-family: 微软雅黑;
     text-align: center;
     color:#000000;
-    width:120px;
-    height:20px;
+    width:60px;
+    height:30px;
     border:1px solid;
     border-radius:3px;
-}/*待改选项样式*/
+}/*选项栏样式*/
 
 textarea {
     font-size:15px;
@@ -76,6 +76,15 @@ form {
     border-radius:3px;
 }/*表单样式*/
 
+label {
+    font-size:15px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #000000;
+    border:1px solid;
+    border-radius:3px;
+}
+
 input {
     font-size:15px;
     font-family: 微软雅黑;
@@ -100,6 +109,17 @@ input.upLoad:hover {
     cursor: pointer;
 }/*鼠标放到输入提交按钮上的样式*/
 
+input.search {
+    font-size:15px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color:#000000;
+    width:120px;
+    height:30px;
+    border:1px solid;
+    border-radius:3px;
+}/*选项栏样式*/
+
 div.background {
     background: url("picture_background.jpg");
     margin:15px;
@@ -117,7 +137,7 @@ div.transbox {
     filter:alpha(opacity=80);
     opacity:0.8;
     border-radius:3px;
-}/*透明框的样式*/
+}/*透明框样式*/
 
 div.transbox form {
     font-size:15px;
@@ -183,21 +203,6 @@ div.transbox form {
     cursor: pointer;
 }/*图标4*/
 
-#five {
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60px 60px;
-    border:1px solid;
-    border-radius:30px;
-    position: absolute;
-    left:1180px;
-    top:470px;
-    cursor: pointer;
-}/*图标5*/
-
-
 #textOne {
     position: absolute;
     left: 1180px;
@@ -221,12 +226,6 @@ div.transbox form {
     left: 1180px;
     top:410px;
 }/*图标说明文字4*/
-
-#textFive {
-    position: absolute;
-    left: 1180px;
-    top:520px;
-}/*图标说明文字5*/
 
 @font-face
 {

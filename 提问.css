@@ -1,26 +1,26 @@
 ﻿form {
     width:320px;
     height:350px;
-}
+}/*表单长宽*/
 
 div.background {
     width: 460px;
     height: 450px;
-}
+}/*透明框背景的长宽*/
 
 div.transbox {
     width: 400px;
     height: 400px;
-}
+}/*透明框长宽*/
 
 #first {
     background: url("picture_checkOut.jpg");
-}
+}/*图标1背景*/
 
 #second {
     background: url("picture_center.jpg");
-}
+}/*图标2背景*/
 
 #three {
-    background: url("picture_first.jpg");
-}
+    background: url("picture_search.jpg");
+}/*图标3背景*/

@@ -1,44 +1,34 @@
 #first {
     background: url("picture_checkOut.jpg");
-}
+}/*图标1背景*/
 
 #second {
     background: url("picture_ask.jpg");
-}
+}/*图标2背景*/
 
 #three {
-    background: url("picture_first.jpg");
-}
+    background: url("picture_search.jpg");
+}/*图标3背景*/
+
+div.items {
+    width: 150px;
+    height: 50px;
+    border:1px solid;
+    position: absolute;
+    border-radius:3px;
+}/*文本框样式*/
 
 #itemOne {
-    width: 90px;
-    height: 50px;
-    border:1px solid;
-    position: absolute;
     left:100px;
     top:100px;
-    border-radius:3px;
-    cursor:pointer;
-}
+}/*文本框1的位置*/
 
 #itemTwo {
-    width: 150px;
-    height: 50px;
-    border:1px solid;
-    position: absolute;
-    left:200px;
+    left:270px;
     top:100px;
-    border-radius:3px;
-    cursor:pointer;
-}
+}/*文本框2的位置*/
 
 #itemThree {
-    width: 150px;
-    height: 50px;
-    border: 1px solid;
-    position: absolute;
-    left: 360px;
+    left: 430px;
     top: 100px;
-    border-radius:3px;
-    cursor:pointer;
-}
+}/*文本框3的位置*/

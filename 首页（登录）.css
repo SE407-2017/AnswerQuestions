@@ -1,7 +1,7 @@
 form {
     width:400px;
     height:160px;
-}
+}/*表单长宽*/
 
 img {
     width: 60px;
@@ -14,12 +14,12 @@ img {
     position: absolute;
     left: 480px;
     top: 280px;
-}
+}/*图案样式*/
 
 #first {
     background: url("picture_center.jpg");
-}
+}/*图标1背景*/
 
 #second {
     background: url("picture_ask.jpg");
-}
+}/*图标2背景*/

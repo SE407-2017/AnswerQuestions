@@ -1,16 +1,16 @@
 form {
     width: 400px;
     height: 160px;
-}
+}/*表单长宽*/
 
 #first {
     background: url("picture_checkOut.jpg");
-}
+}/*图标2背景*/
 
 #second {
     background: url("picture_center.jpg");
-}
+}/*图标2背景*/
 
 #three {
     background: url("picture_first.jpg");
-}
+}/*图标2背景*/

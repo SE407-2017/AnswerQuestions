@@ -1,0 +1,12 @@
+﻿form {
+    width:400px;
+    height:100px;
+}/*表单长宽*/
+
+#first {
+    background: url("picture_enroll.jpg");
+}/*图标1背景*/
+
+#second {
+    background: url("picture_register.jpg");
+}/*图标2背景*/

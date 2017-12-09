@@ -1,14 +1,14 @@
 ﻿form {
 	width:240px;
 	height:150px;
-}
+}/*表单长宽*/
 
 div.background {
 	width: 400px;
 	height: 310px;
-}
+}/*透明框背景的长宽*/
 
 div.transbox {
 	width: 340px;
 	height: 250px;
-}
+}/*透明框长宽*/

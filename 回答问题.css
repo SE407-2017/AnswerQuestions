@@ -1,0 +1,43 @@
+﻿form {
+    width: 400px;
+    height: auto;
+}/*表单长宽*/
+
+img {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    border:1px solid;
+    border-radius:20px;
+    position: absolute;
+    left: 680px;
+    top: 350px;
+}/*图案样式*/
+
+div.background {
+    width: 550px;
+    height: auto;
+}/*透明框背景的长宽*/
+
+div.transbox {
+    width: 500px;
+    height: auto;
+}/*透明框长宽*/
+
+#first {
+    background: url("picture_checkOut.jpg");
+}/*图标1背景*/
+
+#second {
+    background: url("picture_ask.jpg");
+}/*图标2背景*/
+
+#three {
+    background: url("picture_center.jpg");
+}/*图标3背景*/
+
+#four {
+    background: url("picture_search.jpg");
+}/*图标4背景*/
