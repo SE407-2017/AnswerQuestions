@@ -16,11 +16,11 @@
                 <div class="transbox">
                     <center>
                         <br>
-                        您的身份是：
-                        <input type="radio" name="user_shenfen" value="student" style="cursor:pointer;">学生
-                        <input type="radio" name="user_shenfen" value="assistant" style="cursor:pointer;">助教
-                        <input type="radio" name="user_shenfen" value="teacher" style="cursor:pointer;">老师
                         <form method="post" action="zhuce.php">
+                            您的身份是：
+                            <input type="radio" name="user_shenfen" value="student" style="cursor:pointer;">学生
+                            <input type="radio" name="user_shenfen" value="assistant" style="cursor:pointer;">助教
+                            <input type="radio" name="user_shenfen" value="teacher" style="cursor:pointer;">老师
                             <br>
                             <input type="text" placeholder="用户名" maxlength="12" name="user_id" class="search"><!--输入用户名，最长12位-->
                             <br><br>
@@ -39,6 +39,6 @@
                 </div>
             </center>
         </div>
-    </center>
+    </center><!--提供注册功能，用户能够选择自己的身份。能够检查用户名重复，以及确认密码与之前填写的密码不匹配的问题-->
 </body>
 </html>
