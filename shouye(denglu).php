@@ -2,7 +2,7 @@
 <html lang="ch">
 <head>
     <meta charset="UTF-8">
-    <title>首页(登录）</title>
+    <title>首页</title>
     <link rel="stylesheet" type="text/css" href="首页（登录）.css">
     <link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
     <script type="text/javascript" src="动画.js"></script>
@@ -42,13 +42,13 @@
             <br><br>
             <input type="submit" value="搜索" class="upLoad">
 		</form>
-    </center>
+    </center><!--提供搜索功能，可以搜索课程，也可以直接搜索问题。可以选择搜索的排序。搜索课程时，会显示出该课程中相应的问题。-->
 
         <br>
         <p>热点讨论区：</p>
         <img src="picture_dissicion.jpg">
 
-        <table>
+        <table><!--显示出需求度最高的5个问题-->
             <tr>
                 <th width="400px" style="float: left;" >内容：</th>
                 <th width="100px">提问人：</th>

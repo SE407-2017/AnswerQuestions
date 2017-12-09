@@ -10,7 +10,7 @@
 <body>
     <h1>课业难题交流</h1>
     
-	<div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
+	<div id="first" onclick=window.open("首页（待登录）.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
 	<div id="textOne">
 		<p>退出登录</p>
 	</div>
@@ -22,7 +22,7 @@
 
 	<div id="three" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)" ></div>
 	<div id="textThree">
-		<p>返回首页</p>
+		<p>我要搜索</p>
 	</div>
 
 	<center>
@@ -45,13 +45,13 @@
 				<textarea rows="7" cols="35" placeholder="在这里输入你要提问的内容（不多于500字）" maxlength="500" name="content"></textarea>
 				<br>
 				<center>
-					<label for="file"></label>
+					<label for="file" style="cursor: pointer;"></label>
 			   	 	<input type="file" name="file" id="file" class="search" style="cursor: pointer;"><br><br>
 					<input type="submit" name="submit" value="发表" class="upLoad">
 				</center>
 			</form>
 			</div>
 		</div>
-	</center>
+	</center><!--提供提问功能，在提问时，要选好问题所属的课程，这样问题就会出现在相应的课程中。提问时，可以上传图片。-->
 </body>
 </html>

@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>搜索"<?php echo $_POST["course"];?>"的结果</title>
+    <title>我要搜索"<?php echo $_POST["course"];?>"的结果</title>
     <link rel="stylesheet" type="text/css" href="搜索.css">
     <link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
     <script type="text/javascript" src="动画.js"></script>
@@ -10,7 +10,7 @@
 <body>
     <h1>课业难题交流</h1>
 
-    <div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
+    <div id="first" onclick=window.open("首页（待登录）.html") onmouseover="over(this)" onmouseout="out(this)" ></div>
     <div id="textOne">
         <p>退出登录</p>
     </div>
@@ -47,7 +47,7 @@
             <br><br>
             <input type="submit" value="搜索" class="upLoad">
         </form>
-    </center>
+    </center><!--提供搜索功能，可以搜索课程，也可以直接搜索问题。可以选择搜索的排序。搜索课程时，会显示出该课程中相应的问题。-->
 
     <p><?php
 	if ($_POST["select_type"]=="0")

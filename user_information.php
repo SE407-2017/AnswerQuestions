@@ -9,7 +9,7 @@
 <body>
     <h1>课业难题交流</h1>
 
-    <div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="first" onclick=window.open("首页（待登录）.html") onmouseover="over(this)" onmouseout="out(this)"></div>
     <div id="textOne">
         <p>退出登录</p>
     </div>
@@ -21,10 +21,10 @@
 
     <div id="three" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)" ></div>
     <div id="textThree">
-        <p>返回首页</p>
+        <p>我要搜索</p>
     </div>
 
-    <div id="itemOne">
+    <div class="items" id="itemOne">
         <p>用户名:</p>
         <?php
             session_start();
@@ -34,7 +34,7 @@
 
 	<br>
 
-    <div id="itemTwo">
+    <div class="items" id="itemTwo">
         <p>姓名：</p>
 			<?php
 				echo $_SESSION['G_name'];//显示姓名
@@ -42,7 +42,7 @@
     </div>
     <br>
 
-    <div id="itemThree">
+    <div class="items" id="itemThree">
         <p>学号：</p>
 			<?php
 				echo $_SESSION['G_num'];//显示学号

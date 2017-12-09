@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <title>回答问题</title>
-    <link rel="stylesheet" type="text/css" href="回答.css">
+    <link rel="stylesheet" type="text/css" href="回答问题.css">
     <link rel="stylesheet" type="text/css" href="public.css"><!--外部样式-->
     <script type="text/javascript" src="动画.js"></script>
 </head>
 <body>
     <h1>课业难题交流</h1>
 
-    <div id="first" onclick=window.open("首页.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="first" onclick=window.open("首页（待登录）.html") onmouseover="over(this)" onmouseout="out(this)"></div>
     <div id="textOne">
         <p>退出登录</p>
     </div>
@@ -24,14 +24,9 @@
         <p>个人中心</p>
     </div>
 
-    <div id="four" onclick=window.open("搜索.html") onmouseover="over(this)" onmouseout="out(this)"></div>
+    <div id="four" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)"></div>
     <div id="textFour">
         <p>我要搜索</p>
-    </div>
-
-    <div id="five" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)" ></div>
-    <div id="textFive">
-        <p>返回首页</p>
     </div>
 
     <center>
@@ -99,7 +94,7 @@
                                 {
                                     echo "<img src=$r_url width='300px'>";
                                 }
-                                echo "<br>"."<p style'color:white;'>"."回答很赞:"."</p>".$rowx["praise_num"]."   "."<a href='dianzan2.php?content=$text'>"."+1"."</a>"."<br>"."<br>";
+                                echo "<br>"."<p style='color:white;'>"."回答很赞:"."</p>".$rowx["praise_num"]."   "."<a href='dianzan2.php?content=$text'>"."+1"."</a>"."<br>"."<br>";
                             }
                             mysqli_close($con);
                             ?>
@@ -107,14 +102,14 @@
 
                             <textarea rows="5" cols="50" placeholder="在这里输入你要回复的内容（不多于500字）" maxlength="500" name="textarea" ></textarea>
                             <br>
-                            <label for="file"></label>
-                   	 	<input type="file" name="file" id="file">
+                            <label for="file" style="cursor:pointer;"></label>
+                   	 	    <input type="file" name="file" id="file" style="cursor:pointer;">
                             <input type="submit" name="submit" value="发表" class="upload">
                         </form>
                     </center>
                 </div>
             </center>
         </div>
-    </center>
+    </center><!--提供回答功能，回答时可以上传图片。可以通过点击来增加问题的需求度，可以通过点击来增加回答的点赞数-->
 </body>
 </html>
