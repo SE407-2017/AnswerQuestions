@@ -22,7 +22,7 @@
 
     <div id="three" onclick=window.open("shouye(denglu).php") onmouseover="over(this)" onmouseout="out(this)" ></div>
     <div id="textThree">
-        <p>返回首页</p>
+        <p>我要搜索</p>
     </div>
 
     <center>
