@@ -45,23 +45,24 @@
 			
 			if ($_POST["select_type"]=="0")
 			{
-			$course=$_POST["course"];
-			$result=mysqli_query($con, "select * from problem where course='$course'");//显示当前课程的所有问题
-			$number=mysqli_num_rows($result);
+				$course=$_POST["course"];
+				$result=mysqli_query($con, "select * from problem where course='$course'");//显示当前课程的所有问题
+				$number=mysqli_num_rows($result);
 			
-			for ($x=1;$x<=$number;$x++)
-			{
-				$row=mysqli_fetch_array($result);
-				echo "<tr>"."<td>";
-				$text=$row["text_content"];
-				echo "<a style='margin-left: 30px' target='_blank' href='answer_question.php?content=$text'>".$text."</a>"."</td>";
-				echo "<td>".$row['people']."</td>";
-				echo "<td>".$row['reply_num']."</td>";
-				echo "<td>".$row['state']."</td>";
-				echo "<td>".$row['time']."</td>";
-				echo "</tr>";	
+				for ($x=1;$x<=$number;$x++)
+				{
+					$row=mysqli_fetch_array($result);
+					echo "<tr>"."<td>";
+					$text=$row["text_content"];
+					echo "<a style='margin-left: 30px' target='_blank' href='answer_question.php?content=$text'>".$text."</a>"."</td>";
+					echo "<td>".$row['people']."</td>";
+					echo "<td>".$row['reply_num']."</td>";
+					echo "<td>".$row['state']."</td>";
+					echo "<td>".$row['time']."</td>";
+					echo "</tr>";	
+				}
 			}
-			}
+	    		//新添加的部分调用全文搜索模块
 			else
 			{
 				$result=exec("C:/wamp/www/search.py {$course}");
